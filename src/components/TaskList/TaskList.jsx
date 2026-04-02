@@ -9,7 +9,7 @@ const TaskList = ({data}) => {
   return (
     <div
       id="taskList"
-      className="h-[60%] overflow-x-auto w-full items-center justify-start mt-10 py-5 rounded-xl flex flex-nowrap gap-4"
+      className="h-[60%] overflow-x-auto w-full items-center justify-center lg:justify-start mt-10 py-5 rounded-xl flex flex-wrap lg:flex-nowrap gap-4"
     >
 
       {data.tasks.map((elem,idx)=>{

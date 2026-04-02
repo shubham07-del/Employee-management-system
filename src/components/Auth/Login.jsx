@@ -13,7 +13,7 @@ const Login = (props) => {
     }
   return (
     <div className='h-screen w-full flex items-center bg-[#1c1c1c] text-white justify-center'>
-        <div className='border-2 border-emerald-600 p-20 rounded-xl'>
+        <div className='border-2 border-emerald-600 p-10 lg:p-20 rounded-xl'>
             <form
             onSubmit={submitHandler}
              className='flex flex-col items-center justify-center'>

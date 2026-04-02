@@ -30,16 +30,16 @@ const AcceptTask = ({ data, employeeName }) => {
   };
 
   return (
-    <div className="h-full w-[350px] shrink-0 bg-blue-500 rounded-xl p-10">
+    <div className="lg:h-full w-[350px] sm:shrink-0 bg-blue-500 rounded-xl p-10">
       <div className="flex justify-between items-center">
         <h3 className="bg-red-400 border-2 px-3 py-1 rounded text-xl">{data.category}</h3>
         <h4 className="text-xl font-semibold">{data.date}</h4>
       </div>
       <h1 className="mt-5 text-2xl font-semibold">{data.title} </h1>
       <p className="mt-3 text-lg">{data.description}</p>
-      <div className="flex justify-between mt-4">
-        <button onClick={() => updateTaskState(true)} className="bg-green-600 text-white border-2 font-medium active:scale-95 cursor-pointer px-3 py-1 rounded text-sm">Mark as completed</button>
-        <button onClick={() => updateTaskState(false)} className="bg-red-600 text-white border-2 font-medium active:scale-95 cursor-pointer px-3 py-1 rounded text-sm">Mark as Failed</button>
+      <div className="flex flex-col lg:flex-col-reverse gap-3 justify-between mt-4">
+        <button onClick={() => updateTaskState(true)} className="bg-green-600 text-white border-2 font-medium active:scale-95 cursor-pointer px-3 py-1 rounded sm:text-4xl  lg:text-sm">Mark as completed</button>
+        <button onClick={() => updateTaskState(false)} className="bg-red-600 text-white border-2 font-medium active:scale-95 cursor-pointer px-3 py-1 rounded sm:text-4xl  lg:text-sm">Mark as Failed</button>
       </div>
     </div>
   );
