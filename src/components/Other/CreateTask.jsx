@@ -56,9 +56,9 @@ const [userData,setUserData] = useContext(AuthData)
         onSubmit={submithandler}
         className=" mt-5 text-white">
 
-       <div className=" bg-[#202020]  flex justify-between rounded">
+       <div className=" bg-[#202020] flex flex-col lg:flex-row justify-between rounded mt-4">
     
-          <div className="w-1/2 flex flex-col items-start justify-center p-5">
+          <div className="w-full lg:w-1/2 flex flex-col items-start justify-center p-3 sm:p-5">
             <div className="w-full mt-4">
               <h3>Task Title</h3>
               <input
@@ -67,7 +67,7 @@ const [userData,setUserData] = useContext(AuthData)
               onChange={(e)=>{
                 setTitle(e.target.value)
               }}
-              className="border-2 border-white outline-none px-6 py-2 text-xl font-semibold rounded-lg w-[60%] bg-transparent" type="text" placeholder="Enter Task" />
+              className="border border-gray-400 outline-none px-4 sm:px-6 py-2 text-base sm:text-xl font-semibold rounded-lg w-full lg:w-[80%] bg-transparent mb-2" type="text" placeholder="Enter Task" />
             </div>
             <div className="w-full mt-4">
               <h3>Date</h3>
@@ -77,7 +77,7 @@ const [userData,setUserData] = useContext(AuthData)
                 setTaskDate(e.target.value)
               }}
               value={date}
-              className="border-2 border-white outline-none px-6 py-2 text-xl font-semibold rounded-lg w-[60%] bg-transparent" type="date" />
+              className="border border-gray-400 outline-none px-4 sm:px-6 py-2 text-base sm:text-xl font-semibold rounded-lg w-full lg:w-[80%] bg-transparent mb-2" type="date" />
             </div>
             <div className="w-full mt-4">
               <h3>Assign to</h3>
@@ -87,7 +87,7 @@ const [userData,setUserData] = useContext(AuthData)
               onChange={(e)=>{
                 setAsignTo(e.target.value)
               }}
-              className="border-2 border-white outline-none px-6 py-2 text-xl font-semibold rounded-lg w-[60%] bg-transparent" type="text" placeholder="Employee name" />
+              className="border border-gray-400 outline-none px-4 sm:px-6 py-2 text-base sm:text-xl font-semibold rounded-lg w-full lg:w-[80%] bg-transparent mb-2" type="text" placeholder="Employee name" />
             </div>
             <div className="w-full mt-4">
               <h3>Category</h3>
@@ -97,12 +97,12 @@ const [userData,setUserData] = useContext(AuthData)
               onChange={(e)=>{
                 setCategory(e.target.value)
               }}
-              className="border-2 border-white outline-none px-6 py-2 text-xl font-semibold rounded-lg w-[60%] bg-transparent" type="text" placeholder="Design, dev etc.." />
+              className="border border-gray-400 outline-none px-4 sm:px-6 py-2 text-base sm:text-xl font-semibold rounded-lg w-full lg:w-[80%] bg-transparent mb-2" type="text" placeholder="Design, dev etc.." />
             </div>
           </div>
 
-          <div className="w-1/2 flex flex-col items-center justify-center p-5">
-            <div className="w-full sm:w-[90%] lg:w-[80%] flex flex-col">
+          <div className="w-full lg:w-1/2 flex flex-col items-center justify-start sm:justify-center p-3 sm:p-5">
+            <div className="w-full lg:w-[90%] xl:w-[80%] flex flex-col">
               <h3 className="text-left text-lg font-semibold">Description</h3>
               <textarea
               required
@@ -110,9 +110,9 @@ const [userData,setUserData] = useContext(AuthData)
               onChange={(e)=>{
                 setDescription(e.target.value)
               }}
-              className="w-full bg-transparent border-2 border-emerald-300 mt-2 p-4 rounded-md outline-none" name="" id="" placeholder="Enter description" rows={8}></textarea>
+              className="w-full bg-transparent border border-gray-400 mt-2 p-3 sm:p-4 rounded-md outline-none text-sm sm:text-base" name="" id="" placeholder="Enter description" rows={8}></textarea>
               <button
-              className="w-full mt-4 px-6 py-3 bg-emerald-500 text-black font-semibold text-xl rounded-xl hover:bg-emerald-700 cursor-pointer">Create task</button>
+              className="w-full mt-4 sm:mt-5 px-6 py-3 bg-emerald-500 text-black font-semibold text-lg sm:text-xl rounded-xl hover:bg-emerald-700 transition-colors">Create task</button>
             </div>
           </div>
 
