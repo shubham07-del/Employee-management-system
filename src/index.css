@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+#taskList::-webkit-scrollbar{
+    display: none;
+}
+.adminDash::-webkit-scrollbar{
+    display: none;
+}
+
+::placeholder{
+    color: gray;
+}
